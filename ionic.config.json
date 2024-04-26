@@ -1,0 +1,7 @@
+{
+  "name": "medi-alert",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
