@@ -10,10 +10,12 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { images, square, triangle, ellipse, idCardOutline, 
+  calendarNumberOutline, medkitOutline } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
+import React, { Component } from "react";
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -47,6 +49,8 @@ import './theme/variables.css';
 
 setupIonicReact();
 
+
+
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
@@ -67,16 +71,16 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon aria-hidden="true" icon={triangle} />
+            <IonIcon aria-hidden="true" icon={idCardOutline} />
             <IonLabel>Mis recetas</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon aria-hidden="true" icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+            <IonIcon aria-hidden="true" icon={calendarNumberOutline} />
+            <IonLabel>Calendario</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+            <IonIcon aria-hidden="true" icon={medkitOutline} />
+            <IonLabel>Farmacia</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
@@ -85,3 +89,8 @@ const App: React.FC = () => (
 );
 
 export default App;
+
+
+//----------------------------------------------------
+
+
